@@ -6,6 +6,35 @@
     box-sizing: border-box;
 }
 
+:root{
+    --first-color: #0e2431;
+    --second-color: #6a59d1;
+    --third-color: #777;
+
+    --hover-color: #614fd0;
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --bg-transparent-color-01: rgba(106, 89, 209, 0.1);
+    
+    --line-color: #d7d7d7;
+
+    --color-filter: invert(1);
+
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+
+    --normal-font-size: 1.05rem;
+    --para-font-size: 1.2rem;
+    --title-sm-font: 1.5rem;
+    --title-font-size: 4rem;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,11 +44,15 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: var(--body-bg-color);
+    color: var(--first-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
 }
 
 input,
 button,
-textarea{
+textarea {
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -33,4 +66,177 @@ a{
 
 img{
     width: 100%;
+}
+
+section{
+    padding: 7rem 0;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation */
+header{
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    transition: .6s ease;
+}
+
+.nav-bar{
+    position: relative;
+    height: calc(4rem + 1rem);
+    max-width: 80.35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.2rem;
+    transition: .6s ease;
+}
+
+.nav-bar .logo{
+    color: var(--first-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+    cursor: default;
+}
+
+.nav-bar .logo span{
+    color: var(--second-color);
+}
+
+.nav-items a{
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-items a:not(:last-child){
+    margin-right: 3.125rem;
+}
+
+.nav-items a:hover{
+    color: var(--hover-color);
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+/* Home section */
+.home{
+    position: relative;
+    max-width: 80.35rem;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 2rem;
+    flex-direction: column;
+}
+
+.home .home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home-container .media-icons{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5rem;
+}
+
+.home-container .media-icons a{
+    color: var(--second-color);
+    font-size: 1.5rem;
+    margin: 0.625rem 0;
+}
+
+.home-container .media-icons a:hover{
+    color: var(--hover-color);
+}
+
+.home-container .info{
+    width: 100%;
+}
+
+.home-container .info h2{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 4.375rem;
+}
+
+
+.home-container .info h3{
+    color: var(--third-color);
+    font-feature-settings: 1.3rem;
+    font-weight: 500;
+    line-height: 3.125rem;
+}
+
+.home-container .info p{
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    text-align: justify;
+    max-width: 21.8rem;
+}
+
+.btn{
+    background-color: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.2rem 1.8rem;
+    letter-spacing: 1px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 1.8rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--hover-color);
+}
+
+.home-container .home-image{
+    position: relative;
+}
+
+.home-container .home-image{
+    width: 90%;
+    transform: translate(0, 0);
+}
+
+
+.home .scroll-down{
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    animation: arrow-down ease 2s infinite;
+}
+
+.home .scroll-down i{
+    color: var(--second-color);
+    font-size: 1.2rem;
+}
+
+@keyframes arrow-down{
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(0.6rem);
+    }
 }
