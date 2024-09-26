@@ -7,27 +7,27 @@
 }
 
 :root {
-    --first-color: #0e2431;
-    --second-color: #f13a81;
-    --third-color: #777;
+    --first-color: #1a2d42;
+    --second-color: #ff477e;
+    --third-color: #555555;
 
-    --hover-color: #d50e6b;
-    --body-bg-color: #fefefe;
-    --card-bg-color: #fff;
-    --modal-bg-color: #fff;
+    --hover-color: #e6005c;
+    --body-bg-color: #f9fafb;
+    --card-bg-color: #ffffff;
+    --modal-bg-color: #fafafa;
 
-    --bg-transparent-color: rgba(0, 0, 0, 0.1);
-    --bg-transparent-color-01: rgba(106, 89, 209, 0.1);
+    --bg-transparent-color: rgba(0, 0, 0, 0.15);
+    --bg-transparent-color-01: rgba(106, 89, 209, 0.15);
 
-    --line-color: #d7d7d7;
+    --line-color: #c0c0c0;
 
     --color-filter: invert(1);
 
-    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    --box-shadow: 0px 0px 25px rgb(0 0 0 / 15%);
 
-    --scroll-bar-color: #c5cadf;
-    --scroll-thumb-color: #70768a;
-    --scroll-thumb-hover-color: #454f6b;
+    --scroll-bar-color: #b0b7d9;
+    --scroll-thumb-color: #606680;
+    --scroll-thumb-hover-color: #2b3452;
 
     --normal-font-size: 1.05rem;
     --para-font-size: 1.2rem;
@@ -187,6 +187,10 @@ header.sticky .nav-bar{
     color: var(--hover-color);
 }
 
+.home-container .media-icons i{
+    font-size: 1.8rem;
+}
+
 .home-container .info {
     width: 100%;
 }
@@ -248,12 +252,12 @@ header.sticky .nav-bar{
     color: var(--first-color);
     font-size: var(--normal-font-size);
     font-weight: 500;
-    margin-top: 1.25rem;
+    margin-top: 1.35rem;
     text-transform: uppercase;
-    animation: arrow-down ease 2s infinite;
 }
 
 .home .scroll-down i {
+    animation: arrow-down ease 2s infinite;
     color: var(--second-color);
     font-size: 1.2rem;
 }
@@ -268,7 +272,7 @@ header.sticky .nav-bar{
     }
 }
 
-/* about section */
+/* About section */
 .sub-section {
     position: relative;
     width: 71.8rem;
@@ -281,7 +285,7 @@ header.sticky .nav-bar{
     font-size: 4.5rem;
     font-weight: 800;
     margin-bottom: 2rem;
-    background: linear-gradient(to top, transparent 0%, var(--second-color) 70%);
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .1;
@@ -367,4 +371,87 @@ header.sticky .nav-bar{
 .about-info .professional-list .list-item span {
     color: var(--third-color);
     font-size: var(--normal-font-size);
+}
+
+/* Skills section */
+.skills .container .content{
+    width: 100%;
+}
+
+.skills-description{
+    max-width: 700px;
+    margin-bottom: 3.1rem;
+}
+
+.skills-description h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.skills-description p{
+    text-align: justify;
+}
+
+.skills-info{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.25rem;
+    margin: 0 auto;
+}
+
+.skills-info h4{
+    margin-bottom: 1.25rem;
+}
+
+.skills-info h4 label{
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.5rem;
+}
+
+.education-all{
+    margin-bottom: 5rem;
+}
+
+.edu-list .item{
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    border-bottom: 3px solid var(--second-color);
+    padding: 1.25rem;
+    margin-top: 0.9rem;
+    border-radius: 0.8rem;
+    transition: .3s ease;
+}
+
+.edu-list .item .year{
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.3rem;
+}
+
+.edu-list .item p{
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+}
+
+.edu-list .item p span{
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+.edu-list .item img{
+    max-width: 3.75rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.edu-list .item .icons{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
 }
