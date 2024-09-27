@@ -22,3 +22,26 @@ modalCloseBtns.forEach((modalCloseBtn, i) => {
         serviceModals[i].classList.remove("active");
     });
 });
+
+
+// Portfolio modal.
+const portfolioModals = document.querySelectorAll(".portfolio-model");
+const imgCards = document.querySelectorAll(".img-card");
+const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
+
+// Function to show the modal
+var portfolioModal = function(modalClick) {
+    portfolioModals[modalClick].classList.add("active");
+}
+
+imgCards.forEach((imgCard, i) => {
+    imgCard.addEventListener("click", () => {
+        portfolioModal(i);
+    });
+});
+
+portfolioCloseBtns.forEach((portfolioCloseBtn, i) => {
+    portfolioCloseBtn.addEventListener("click", () => {
+        portfolioModals[i].classList.remove("active");
+    });
+});

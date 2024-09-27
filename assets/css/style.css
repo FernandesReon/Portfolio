@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +70,21 @@ section {
     margin-left: auto;
     margin-right: auto;
     padding: 6rem 2rem 2rem;
+}
+
+.btn {
+    background-color: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.2rem 1.4rem;
+    letter-spacing: 1px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 1.8rem;
+    cursor: pointer;
 }
 
 .flex-center {
@@ -186,9 +201,6 @@ header.sticky .nav-items a.active::after {
     background-color: var(--hover-color);
 }
 
-
-
-
 /* Home section */
 .home {
     position: relative;
@@ -250,21 +262,6 @@ header.sticky .nav-items a.active::after {
     font-size: var(--normal-font-size);
     text-align: justify;
     max-width: 21.8rem;
-}
-
-.btn {
-    background-color: var(--second-color);
-    color: #fff;
-    font-size: var(--normal-font-size);
-    font-weight: 500;
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1.2rem 1.4rem;
-    letter-spacing: 1px;
-    border: none;
-    text-transform: uppercase;
-    border-radius: 1.8rem;
-    cursor: pointer;
 }
 
 .btn:hover {
@@ -611,3 +608,146 @@ header.sticky .nav-items a.active::after {
 .service-modal-body ul li i{
     color: var(--second-color);
 }
+
+/* Portfolio section */
+.portfolio .container .content{
+    width: 100%;
+}
+
+.portfolio-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 100%;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.portfolio-list .img-card{
+    position: relative;
+    max-width: 100%;
+    height: 22rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-list .img-card .overlay{
+    transition: 1s ease;
+}
+
+.portfolio-list .img-card:hover .overlay{
+    z-index: 700;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-list .img-card .info{
+    z-index: 700;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1.25rem;
+    color: #fff;
+    transform: translateY(1.25rem);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.portfolio-list .img-card:hover .info{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-list .img-card .info h3{
+    font-size: 1.45rem;
+    font-weight: 800;   
+}
+
+.portfolio-list .img-card .info span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.portfolio-list .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-model{
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--bg-transparent-color-01);
+    backdrop-filter: blur(1.25rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.portfolio-model.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-model-body{
+    position: relative;
+    background: var(--modal-bg-color);
+    max-width: 700px;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .5s ease;
+}
+
+.portfolio-model-body p{
+    margin: 0.5rem auto;
+    text-align: justify;
+}
+
+.portfolio-model-body ul li::before{
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    color: var(--second-color);
+}
+
+.portfolio-model-body li{
+    margin: 0.6rem auto;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.portfolio-model-body span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--first-color);
+}
+
+.portfolio-model.active .portfolio-model-body{
+    transform: translateY(0);
+}
+
+.portfolio-close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.25rem;
+    cursor: pointer;
+}
+
+.portfolio-model-body h3{
+    font-size: 1.5rem;
+}
+/* 
+.portfolio-model-body img{
+    width: 100%;
+    margin: 1.25rem 0;
+    border-radius: 0.8rem;
+} */
