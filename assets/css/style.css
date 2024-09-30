@@ -29,7 +29,7 @@ body {
 
 .home,
 .nav-bar {
-    max-width: 80.35rem
+    max-width: 71.8rem
 }
 
 .btn,
@@ -101,7 +101,8 @@ a {
 }
 
 section {
-    width: 71.8rem;
+    overflow: hidden;
+    max-width: 71.8rem;
     padding: 6rem 2rem 2rem
 }
 
@@ -123,6 +124,31 @@ section {
     justify-content: center;
     align-items: center
 }
+
+/* Scroll to top button */
+.scrollToTop-btn {
+    z-index: 10000;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: var(--second-color);
+    color: #f9fafb;
+    font-size: var(--normal-font-size);
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.scrollToTop-btn.active {
+    right: 20px;
+    pointer-events: all;
+    opacity: 1;
+}
+
 
 ::-webkit-scrollbar {
     width: .6rem;
@@ -218,6 +244,10 @@ header.sticky .nav-bar {
     left: 0
 }
 
+.nav-menu-btn {
+    display: none;
+}
+
 .home {
     min-height: 100vh;
     padding: 4rem 2rem;
@@ -271,6 +301,10 @@ header.sticky .nav-bar {
     line-height: 3.125rem
 }
 
+.home-container .info span {
+    color: var(--second-color);
+}
+
 .home-container .info p {
     color: var(--third-color);
     font-size: var(--normal-font-size);
@@ -280,12 +314,12 @@ header.sticky .nav-bar {
 
 .home-container .home-image {
     position: relative;
-    width: 90%;
-    transform: translate(0, 0)
+    align-items: right;
 }
 
 .home-container .home-image img {
-    max-width: 500px
+    width: 500px;
+    transform: translate(0, 0);
 }
 
 .home .scroll-down {
@@ -312,7 +346,7 @@ header.sticky .nav-bar {
 }
 
 .sub-section {
-    width: 71.8rem;
+    max-width: 71.8rem;
     padding: 6rem 0
 }
 
@@ -367,11 +401,13 @@ header.sticky .nav-bar {
 .about-img {
     position: relative;
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: center;
 }
 
 .about-img img {
-    max-width: 400px;
+    max-width: 350px;
+    height: auto;
     border-radius: 1rem
 }
 
@@ -409,6 +445,14 @@ header.sticky .nav-bar {
 .edu-list .item p span,
 .skills-info h4 label {
     font-size: var(--normal-font-size)
+}
+
+.about-info .professional-list .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
 }
 
 .about-info .professional-list .list-item span,
@@ -479,6 +523,7 @@ header.sticky .nav-bar {
 
 .edu-list .item img {
     max-width: 3.75rem;
+    height: auto;
     border-radius: .5rem;
     box-shadow: var(--box-shadow)
 }
@@ -701,7 +746,7 @@ header.sticky .nav-bar {
 }
 
 /* Contact form */
-.contact .container .content{
+.contact .container .content {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -710,54 +755,54 @@ header.sticky .nav-bar {
 }
 
 .contact-left,
-.contact-right{
+.contact-right {
     flex: 1;
 }
 
-.contact-left h2{
+.contact-left h2 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 40px;
 }
 
-.contact-list li{
+.contact-list li {
     margin-bottom: 40px;
 }
 
-.contact-list li h3{
+.contact-list li h3 {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.contact-list li h3 i{
+.contact-list li h3 i {
     color: var(--second-color);
     font-size: 1.3rem;
     margin-right: 10px;
 }
 
-.contact-list li span{
+.contact-list li span {
     color: var(--second-color);
     margin-left: 40px;
 }
 
-.contact-list li span a{
+.contact-list li span a {
     color: var(--third-color);
 }
 
-.contact-right p{
+.contact-right p {
     color: var(--third-color);
     font-size: 1.6rem;
     margin-bottom: 30px;
 }
 
-.contact-right p span{
+.contact-right p span {
     color: var(--first-color);
     font-weight: 700;
 }
 
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
     width: 100%;
     border: none;
     outline: none;
@@ -769,27 +814,111 @@ header.sticky .nav-bar {
     border-radius: 5px;
 }
 
-.contact-form .second-row{
+.contact-form .second-row {
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
 }
 
-.contact-form .second-row input{
+.contact-form .second-row input {
     width: 50%;
 }
 
-.contact-right textarea{
+.contact-right textarea {
     resize: none;
 }
 
-::placeholder{
+::placeholder {
     color: var(--first-color);
 }
 
-.contact-form .btn{
+.contact-form .btn {
     border: none;
     margin-top: 0;
     border-radius: 10px;
     cursor: pointer;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--second-color);
+    width: 100%;
+    margin-top: 50px;
+    padding: 3rem 4rem;
+    color: #f9fafb;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 71.8rem;
+}
+
+.footer-container .about h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    background: linear-gradient(to top, transparent 0%, #fff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+}
+
+.footer-container .about p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer-container .about a {
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer-container .info,
+.footer-container .follow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container .info h3,
+.footer-container .follow h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-container .info h3,
+.footer-container .follow ul,
+.footer-container .info ul {
+    display: flex;
+}
+
+.footer-container .info a {
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.footer-container .follow a {
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.footer-copyright p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 50px;
 }

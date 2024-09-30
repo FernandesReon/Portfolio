@@ -18,13 +18,23 @@
 </head>
 
 <body>
+
+    <!-- Scroll to top button -->
+    <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
     <header>
         <div class="nav-bar">
             <a href="#" class="logo">Reon<span>.</span></a>
 
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#home" class="nav-link">Home</a>
+
+                    <div class="nav-close-btn"></div>
+
+                    <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#skills" class="nav-link">Skills</a>
                     <a href="#services" class="nav-link">Services</a>
@@ -32,100 +42,104 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
             </div>
+
+            <div class="nav-menu-btn"></div>
+
         </div>
     </header>
 
 
     <!-- home section starts-->
-    <section class="home flex-center" id="home">
+    <section class="home flex-center" id="home" aria-labelledby="home-title">
         <div class="home-container">
 
             <div class="media-icons">
-                <a href="https://www.linkedin.com/in/reon-fernandes/" target="_blank"
+                <a href="https://www.linkedin.com/in/reon-fernandes/" target="_blank" rel="noopener noreferrer"
                     aria-label="Reon Fernandes LinkedIn Profile">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 </a>
 
-                <a href="https://github.com/FernandesReon" target="_blank" aria-label="Reon Fernandes GitHub Profile">
-                    <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/FernandesReon" target="_blank" rel="noopener noreferrer"
+                    aria-label="Reon Fernandes GitHub Profile">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
                 </a>
 
-                <a href="https://www.instagram.com/reonfernandes_7/" target="_blank"
+                <a href="https://www.instagram.com/reonfernandes_7/" target="_blank" rel="noopener noreferrer"
                     aria-label="Reon Fernandes Instagram Profile">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                 </a>
 
-                <a href="https://www.facebook.com/reon.dias.7" target="_blank"
+                <a href="https://www.facebook.com/reon.dias.7" target="_blank" rel="noopener noreferrer"
                     aria-label="Reon Fernandes Facebook Profile">
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
                 </a>
             </div>
 
-
             <div class="info">
-                <h2>Hi, I’m Reon</h2>
+                <h2 id="home-title">Hi, I’m <span>Reon</span></h2>
                 <h3>{Aspiring Software Engineer}</h3>
-                <p>
-                    I’m a passionate and enthusiastic individual, proficient in a variety of programming languages and
-                    technologies.
-                </p>
-                <button class="btn">
+                <p>I’m a passionate and enthusiastic individual, proficient in a variety of programming languages and
+                    technologies.</p>
+                <a href="mailto:reon.fernandes@example.com" class="btn" aria-label="Contact Reon Fernandes">
                     Contact Me
-                    <i class="fas fa-arrow-circle-right"></i>
-                </button>
+                    <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+                </a>
             </div>
 
             <div class="home-image">
                 <picture>
                     <source srcset="assets/images/Cartoon_Reon.avif" type="image/avif">
-                    <source srcset="assets/images/Cartoon_Reon.png" type="image/webp">
-                    <img src="assets/images/Cartoon_Reon.webp" alt="Reon Fernandes">
+                    <source srcset="assets/images/Cartoon_Reon.webp" type="image/webp">
+                    <img src="assets/images/Cartoon_Reon.webp" alt="Cartoon image of Reon Fernandes" loading="lazy"
+                        width="auto" height="auto">
                 </picture>
             </div>
 
         </div>
 
-        <a href="#about" class="scroll-down">
+        <a href="#about" class="scroll-down" aria-label="Scroll down to About section">
             Scroll Down
-            <i class="fa-solid fa-circle-down"></i>
+            <i class="fa-solid fa-circle-down" aria-hidden="true"></i>
         </a>
     </section>
+
     <!-- home section ends -->
 
 
     <!-- about section starts -->
-    <section class="about section" id="about">
+    <section class="about section" id="about" aria-labelledby="about-title">
         <div class="container flex-center">
-            <h1 class="section-title-01">About Me</h1>
+            <h1 id="about-title" class="section-title-01">About Me</h1>
             <h2 class="section-title-02">About Me</h2>
 
             <div class="content flex-center">
                 <div class="about-img">
-                    <img src="assets/images/Reon Fernandes.jpg" alt="Reon Fernandes">
+                    <picture>
+                        <source srcset="assets/images/Reon%20Fernandes.avif" type="image/avif">
+                        <source srcset="assets/images/Reon%20Fernandes.webp" type="image/webp">
+                        <img src="assets/images/Reon%20Fernandes.webp" alt="Portrait of Reon Fernandes" loading="lazy"
+                            width="auto" height="auto">
+                    </picture>
                 </div>
 
                 <div class="about-info">
-
                     <div class="description">
                         <h3>I'm Reon Fernandes</h3>
-                        <h4>An aspiring <span>Software Engineer</span> with a goal to simplify complex tasks in an
-                            elegant way.</h4>
+                        <h4>An aspiring <span>Software Engineer</span> with a goal to simplify complex tasks elegantly.
+                        </h4>
                         <p>
-                            I'm a 23-year-old passionate tech enthusiast from Vasai, India, and I recently completed my
-                            Master’s in Information Technology. Throughout my studies,
+                            I'm a 23-year-old tech enthusiast from Vasai, India, and I recently completed my Master’s in
+                            Information Technology.
                             I've gained valuable knowledge in Cyber Security, Networking, and Software Development, and
                             I enjoy tackling complex problems.
-                            <br>
                             Over the past year, I've worked on various projects that enhanced my backend development
-                            skills, particularly with Java, Spring Boot, Docker, and REST APIs. These experiences have
-                            sharpened my problem-solving abilities and helped me build scalable applications.
-
-
+                            skills, particularly with Java, Spring Boot, Docker, and REST APIs.
+                            These experiences sharpened my problem-solving abilities and helped me build scalable
+                            applications.
                         </p>
                     </div>
 
                     <ul class="professional-list">
-
                         <li class="list-item">
                             <h3>1+</h3>
                             <span>Year of <br>Project Experience</span>
@@ -136,8 +150,9 @@
                             <span>Successful<br>Projects</span>
                         </li>
                     </ul>
-                    <a href="Reon Fernandes resume.pdf" target="_blank" class="btn">
-                        Download CV <i class="fas fa-download"></i>
+                    <a href="Reon%20Fernandes%20resume.pdf" target="_blank" class="btn"
+                        aria-label="Download Reon Fernandes' Resume">
+                        Download CV <i class="fas fa-download" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -147,135 +162,112 @@
 
 
     <!-- skills section starts -->
-
-    <section class="skills section" id="skills">
+    <section class="skills section" id="skills" aria-labelledby="skills-title">
         <div class="container flex-center">
-            <h1 class="section-title-01">Skills</h1>
+            <h1 id="skills-title" class="section-title-01">Skills</h1>
             <h2 class="section-title-02">Skills</h2>
             <div class="content">
 
                 <div class="skills-description">
                     <h3>Education & Skills</h3>
                     <p>
-                        With strong academic foundation of over 5 years in Information Technology,
-                        I have pursued both undergraduate and postgraduate degrees, demonstrating
-                        consistent academic excellence. The studies covered a wide range of relevant topics,
-                        including web development, database management, networking, software development and
-                        cloud computing.
+                        With a strong academic foundation of over 5 years in Information Technology, I have pursued both
+                        undergraduate and postgraduate degrees, demonstrating consistent academic excellence. The
+                        studies covered a wide range of relevant topics, including web development, database management,
+                        networking, software development, and cloud computing.
                     </p>
                 </div>
 
-                <div class="skills-info .education-all">
+                <div class="skills-info education-all">
 
+                    <!-- Education Section -->
                     <div class="education">
                         <h4>
                             <label>Education</label>
                         </h4>
                         <ul class="edu-list">
-
                             <!-- Master's -->
                             <li class="item">
                                 <span class="year">2021-2023</span>
                                 <p>
-                                    <span>Master's in Information Technology</span>
+                                    <strong>Master's in Information Technology</strong>
                                     <br>St Gonsalo Gracia College, Vasai(W), India.
-                                    <br>
-                                    GPA: <span>8.85</span>
+                                    <br>GPA: <span>8.85</span>
                                 </p>
                             </li>
-
                             <!-- Bachelor's -->
                             <li class="item">
                                 <span class="year">2018-2021</span>
                                 <p>
-                                    <span>Bachelor's in Information Technology</span>
-                                    <br>
-                                    St Gonsalo Gracia College, Vasai(W), India.
-                                    <br>
-                                    GPA: <span>8.05</span>
+                                    <strong>Bachelor's in Information Technology</strong>
+                                    <br>St Gonsalo Gracia College, Vasai(W), India.
+                                    <br>GPA: <span>8.05</span>
                                 </p>
                             </li>
-
                             <!-- Higher Secondary -->
                             <li class="item">
                                 <span class="year">2016-2018</span>
                                 <p>
-                                    <span>Higher Secondary</span>
-                                    <br>
-                                    St Andrew's College, Mumbai, India.
-                                    <br>
-                                    Percentage: <span>60%</span>
+                                    <strong>Higher Secondary</strong>
+                                    <br>St Andrew's College, Mumbai, India.
+                                    <br>Percentage: <span>60%</span>
                                 </p>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- skills -->
-
+                    <!-- Skills Section -->
                     <div class="education">
                         <h4>
                             <label>Skills</label>
                         </h4>
 
+                        <!-- Programming Languages & Technologies -->
                         <ul class="edu-list">
-
                             <li class="item">
                                 <label>Programming Languages & Technologies</label>
                                 <div class="icons">
-
-                                    <img src="assets/icons/java.svg" alt="Java" />
-
-                                    <img src="assets/icons/python.svg" alt="Python" />
-
-                                    <img src="assets/icons/html5.svg" alt="HMTL5" />
-
-                                    <img src="assets/icons/css3.svg" alt="CSS3" />
-
-                                    <img src="assets/icons/javascript.svg" alt="JavaScript" />
-
+                                    <img src="assets/icons/java.svg" alt="Java Logo" loading="lazy" />
+                                    <img src="assets/icons/python.svg" alt="Python Logo" loading="lazy" />
+                                    <img src="assets/icons/html5.svg" alt="HTML5 Logo" loading="lazy" />
+                                    <img src="assets/icons/css3.svg" alt="CSS3 Logo" loading="lazy" />
+                                    <img src="assets/icons/javascript.svg" alt="JavaScript Logo" loading="lazy" />
                                 </div>
                             </li>
 
+                            <!-- Frameworks & Tools -->
                             <li class="item">
                                 <label>Frameworks & Tools</label>
                                 <div class="icons">
-
-                                    <img src="assets/icons/spring.svg" alt="Spring" />
-
-                                    <img src="assets/icons/git.svg" alt="Git" />
-
-                                    <img src="assets/icons/docker.svg" alt="Docker" />
-
-                                    <img src="assets/icons/apachekafka.svg" alt="kafka" />
-
-                                    <img src="assets/icons/linux.svg" alt="linux" />
-
+                                    <img src="assets/icons/spring.svg" alt="Spring Logo" loading="lazy" />
+                                    <img src="assets/icons/git.svg" alt="Git Logo" loading="lazy" />
+                                    <img src="assets/icons/docker.svg" alt="Docker Logo" loading="lazy" />
+                                    <img src="assets/icons/apachekafka.svg" alt="Apache Kafka Logo" loading="lazy" />
+                                    <img src="assets/icons/linux.svg" alt="Linux Logo" loading="lazy" />
                                 </div>
                             </li>
 
+                            <!-- Databases & Development Environments -->
                             <li class="item">
                                 <label>Databases & Development Environments</label>
                                 <div class="icons">
-
-                                    <img src="assets/icons/mysql.svg" alt="mysql" />
-
-                                    <img src="assets/icons/mongodb.svg" alt="mongodb" />
-
-                                    <img src="assets/icons/postman.svg" alt="postman" />
-
-                                    <img src="assets/icons/vscode.svg" alt="vscode" />
-
-                                    <img src="assets/icons/intellij.svg" alt="intellij" />
+                                    <img src="assets/icons/mysql.svg" alt="MySQL Logo" loading="lazy" />
+                                    <img src="assets/icons/mongodb.svg" alt="MongoDB Logo" loading="lazy" />
+                                    <img src="assets/icons/postman.svg" alt="Postman Logo" loading="lazy" />
+                                    <img src="assets/icons/vscode.svg" alt="VS Code Logo" loading="lazy" />
+                                    <img src="assets/icons/intellij.svg" alt="IntelliJ IDEA Logo" loading="lazy" />
                                 </div>
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-
     <!-- skills section ends -->
+
+    <!-- service section starts -->
     <section class="services section" id="services">
         <div class="container flex-center">
             <h1 class="section-title-01">Services</h1>
@@ -359,7 +351,7 @@
                     </li>
 
                     <!-- Service 3 -->
-                    <li class="service-container">
+                    <!-- <li class="service-container">
                         <div class="service-card">
                             <i class="fa-regular fa-file-code"></i>
                             <i class="fa-solid fa-code"></i>
@@ -368,10 +360,10 @@
                             <div class="learn-more-btn">Learn More
                                 <i class="fa-solid fa-circle-arrow-right"></i>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Modal -->
-                        <div class="service-modal flex-center">
+                        <!-- <div class="service-modal flex-center">
                             <div class="service-modal-body">
                                 <i class="fas fa-times modal-close-btn"></i>
 
@@ -393,7 +385,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -577,7 +569,7 @@
     <!-- Portfolio section ends -->
 
     <!-- Contact section starts -->
-     <section class="contact section" id="contact">
+    <section class="contact section" id="contact">
         <div class="container flex-center">
             <h1 class="section-title-01">Contact Me</h1>
             <h2 class="section-title-02">Contact Me</h2>
@@ -605,7 +597,7 @@
                 </div>
 
                 <div class="contact-right">
-                    <p>I'm always open for discussion                     </p>
+                    <p>I'm always open for discussion </p>
 
                     <form action="#" class="contact-form">
                         <div class="first-row">
@@ -630,8 +622,74 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- Contact section ends -->
+
+    <!-- Footer starts -->
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="about group">
+                <h2>Reon Fernandes</h2>
+                <p>Aspiring Software Engineer</p>
+                <a href="#about">About Me</a>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="info group">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="follow group">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/reon-fernandes/" target="_blank"
+                            aria-label="Reon Fernandes LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/FernandesReon" target="_blank"
+                            aria-label="Reon Fernandes GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/reonfernandes_7/" target="_blank"
+                            aria-label="Reon Fernandes Instagram Profile">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/reon.dias.7" target="_blank"
+                            aria-label="Reon Fernandes Facebook Profile">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright group">
+            <p>&copy; 2024 by Reon Fernandes. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
 
 
     <script type="module" src="assets/script/navbar.js" defer></script>

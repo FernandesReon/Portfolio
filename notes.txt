@@ -1,0 +1,39 @@
+/* Home Section */
+    .home .home-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .home .home-container .info {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home .home-container .info h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .home .home-container .info h3 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .home .home-container .info p {
+        text-align: center;
+        font-size: 1rem;
+        margin: 10px 0;
+        max-width: 90%;
+    }
+
+    .home-container .media-icons{
+        display: none;
+    }
+
+
+    .home .home-container .home-image {
+        max-width: 400px;
+        margin-top: 20px;
+    }
