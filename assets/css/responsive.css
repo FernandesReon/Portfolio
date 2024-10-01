@@ -47,8 +47,7 @@
 
     .nav-menu-btn {
         background: url(../icons/bars-solid.svg) no-repeat;
-        /* filter: var(--color-filter); */
-        color: black;
+        filter: var(--color-filter);
         background-size: 20px;
         background-position: center;
         width: 40px;
@@ -60,7 +59,7 @@
     .nav-close-btn {
         position: absolute;
         background: url(../icons/xmark-solid.svg) no-repeat;
-        color: black;
+        filter: var(--color-filter);
         background-size: 20px;
         background-position: center;
         width: 40px;
@@ -136,6 +135,9 @@
     .about-info .professional-list .list-item{
         justify-content: start;
     }
+
+
+    /* Skills section */
 
     /* Contact Section */
     .contact .content{

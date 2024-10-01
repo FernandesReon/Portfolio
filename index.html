@@ -283,7 +283,7 @@
                     <li class="service-container">
                         <div class="service-card">
                             <i class="fa-regular fa-file-code"></i>
-                            <h3>Web Development</h3>
+                            <h3>Frontend Development</h3>
                             <div class="learn-more-btn">Learn More
                                 <i class="fa-solid fa-circle-arrow-right"></i>
                             </div>
@@ -294,10 +294,10 @@
                             <div class="service-modal-body">
                                 <i class="fas fa-times modal-close-btn"></i>
 
-                                <h3>Web Development</h3>
-                                <h4>What is Web Development?</h4>
+                                <h3>Frontend Development</h3>
+                                <h4>What is Frontend Development?</h4>
                                 <p>
-                                    Web development involves creating and maintaining websites or web applications.
+                                    Frontend Development involves creating and maintaining websites or web applications.
                                     It includes tasks like designing the layout, building the structure, and ensuring
                                     functionality through coding languages like HTML, CSS, and JavaScript.
                                 </p>
@@ -351,7 +351,7 @@
                     </li>
 
                     <!-- Service 3 -->
-                    <!-- <li class="service-container">
+                    <li class="service-container">
                         <div class="service-card">
                             <i class="fa-regular fa-file-code"></i>
                             <i class="fa-solid fa-code"></i>
@@ -360,10 +360,10 @@
                             <div class="learn-more-btn">Learn More
                                 <i class="fa-solid fa-circle-arrow-right"></i>
                             </div>
-                        </div> -->
+                        </div>
 
                         <!-- Modal -->
-                        <!-- <div class="service-modal flex-center">
+                        <div class="service-modal flex-center">
                             <div class="service-modal-body">
                                 <i class="fas fa-times modal-close-btn"></i>
 
@@ -385,7 +385,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
@@ -575,54 +575,61 @@
             <h2 class="section-title-02">Contact Me</h2>
 
             <div class="content">
+                <!-- Left Section: Contact Info -->
                 <div class="contact-left">
                     <h2>Let's discuss your projects</h2>
                     <ul class="contact-list">
                         <li>
-                            <h3 class="item-title"><i class="fas fa-phone"></i>Phone</h3>
+                            <h3 class="item-title">
+                                <i class="fas fa-phone" aria-hidden="true"></i> Phone
+                            </h3>
                             <span>+91 7498722797</span>
                         </li>
-
                         <li>
-                            <h3 class="item-title"><i class="fas fa-envelope"></i>Email Address</h3>
+                            <h3 class="item-title">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Email Address
+                            </h3>
                             <span><a href="mailto:reondias@gmail.com">reondias@gmail.com</a></span>
                         </li>
-
                         <li>
-                            <h3 class="item-title"><i class="fa-solid fa-location-dot"></i>Location</h3>
+                            <h3 class="item-title">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Location
+                            </h3>
                             <span>Vasai(W), Mumbai, India</span>
                         </li>
-
                     </ul>
                 </div>
 
+                <!-- Right Section: Contact Form -->
                 <div class="contact-right">
-                    <p>I'm always open for discussion </p>
+                    <p>I'm always open for discussion.</p>
+                    <form action="#" method="POST" class="contact-form" aria-label="Contact Form">
 
-                    <form action="#" class="contact-form">
                         <div class="first-row">
-                            <input type="text" name="name" id="user-name" placeholder="Name">
+                            <input type="text" name="name" id="user-name" placeholder="Name" required
+                                aria-required="true" aria-label="Name">
                         </div>
 
                         <div class="second-row">
-                            <input type="email" name="email" id="user-email" placeholder="Email-Id">
-                            <input type="text" name="subject" id="topic" placeholder="Subject">
+                            <input type="email" name="email" id="user-email" placeholder="Email" required
+                                aria-required="true" aria-label="Email">
+                            <input type="text" name="subject" id="topic" placeholder="Subject" aria-label="Subject">
                         </div>
 
                         <div class="third-row">
-                            <textarea name="message" id="feedback" rows="7" placeholder="Message"></textarea>
+                            <textarea name="message" id="feedback" rows="5" placeholder="Message"
+                                aria-label="Message"></textarea>
                         </div>
 
                         <button class="btn" type="submit">
-                            Send Message
-                            <i class="fas fa-paper-plane"></i>
+                            Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
                         </button>
                     </form>
-
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Contact section ends -->
 
     <!-- Footer starts -->
