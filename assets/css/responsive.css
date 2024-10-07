@@ -1,3 +1,16 @@
+@media screen and (max-width: 1110px) {
+    /* Skills section */
+
+    .skills-info {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .edu-list .item {
+        flex-basis: 100%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
 
     /* Mobile Navigation */
@@ -88,7 +101,7 @@
     }
 
     .home .home-container .home-image img{
-        max-width: 350px;
+        max-width: 400px;
     }
     .home .home-container .info h2 {
         font-size: 3rem;
@@ -96,7 +109,7 @@
     }
 
     .home .home-container .info h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 2.5rem;
     }
 
@@ -136,9 +149,6 @@
         justify-content: start;
     }
 
-
-    /* Skills section */
-
     /* Contact Section */
     .contact .content{
         flex-direction: column;
@@ -149,13 +159,6 @@
         margin-bottom: 40px;
     }
 
-    .contact-form .second-row{
-        flex-direction: column;
-    }
-
-    .contact-form .second-row input{
-        width: 100%;
-    }
 
     /* Footer Section */
     footer .footer-container{
@@ -189,6 +192,7 @@
 }
 
 @media screen and (max-width: 768px) {
+    /* Common */
     body{
         margin: 5rem 0 0 0;
     }
@@ -202,25 +206,73 @@
         transform: translateY(-65px);
     }
 
-    /* 
-    .home .home-container{
-        display: grid;
+    /* Home Section */
+    .home .home-container .home-image img{
+        max-width: 350px;
     }
 
-    .home-container .home-image{
-        position: absolute;
+    /* Contact Section */
+    .contact-form .second-row{
+        flex-direction: column;
     }
 
-    .home .home-container .info{
-        font-size: 0.8rem;
+    .contact-form .second-row input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    /* Home section */
+    .home .home-container .home-image img{
+        max-width: 300px;
     }
 
-    .home-container .home-image img{
-        width: 60%;
-        transform: translate(80px, -180px);
-    } 
+    .home .home-container #home-title{
+        font-size: 2.5rem;
+    }
 
-    .media-icons{
-        margin-bottom: 80px;
-    }*/
+    .home .home-container #home-sub-title{
+        font-size: 1.05rem;
+    }
+
+    /* About section */
+    .about-img img{
+        width: 300px;
+    }
+
+    .about-info .description h3{
+        font-size: 1.8rem;
+    }
+
+    .about-info .description h4{
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .about-info .description p{
+        font-size: 0.9rem;
+    }
+
+    .professional-list .list-item h3{
+        font-size: 2rem;
+    }
+
+    .about-info .professional-list .list-item span{
+        font-size: 0.9rem;
+    }
+
+    /* Service section */
+    .service-modal-body h3{
+        font-size: 1.3rem;
+    }
+
+    .service-modal-body h4{
+        font-size: 0.9rem;
+    }
+    
+    .service-modal-body p,
+    .service-modal-body ul li{
+        font-size: 0.875rem;
+    }
 }
