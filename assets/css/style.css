@@ -489,6 +489,8 @@ header.sticky .nav-bar {
 
 .service-modal-body p,
 .skills-description p {
+    font-size: var(--normal-font-size);
+    color: var(--third-color);
     text-align: justify
 }
 

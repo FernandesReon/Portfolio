@@ -2,8 +2,8 @@
     /* Skills section */
 
     .skills-info {
-        flex-direction: column; 
-        align-items: stretch; 
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .edu-list .item {
@@ -100,9 +100,10 @@
         align-items: center;
     }
 
-    .home .home-container .home-image img{
+    .home .home-container .home-image img {
         max-width: 400px;
     }
+
     .home .home-container .info h2 {
         font-size: 3rem;
         line-height: 3rem;
@@ -120,7 +121,7 @@
         max-width: 100%;
     }
 
-    .home-container .media-icons{
+    .home-container .media-icons {
         display: none;
     }
 
@@ -131,42 +132,42 @@
         width: 100%;
     }
 
-    .about-img img{
+    .about-img img {
         min-width: 0;
         width: 100%;
     }
 
-    .about-info{
+    .about-info {
         min-width: 0;
         width: 100%;
     }
 
-    .about-info .professional-list{
+    .about-info .professional-list {
         flex-direction: column;
     }
 
-    .about-info .professional-list .list-item{
+    .about-info .professional-list .list-item {
         justify-content: start;
     }
 
     /* Contact Section */
-    .contact .content{
+    .contact .content {
         flex-direction: column;
         font-size: 0.9rem;
     }
 
-    .contact .contact-left{
+    .contact .contact-left {
         margin-bottom: 40px;
     }
 
 
     /* Footer Section */
-    footer .footer-container{
+    footer .footer-container {
         flex-direction: column;
     }
 
     .footer-container .about,
-    .footer-container .info{
+    .footer-container .info {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -174,16 +175,16 @@
         margin-bottom: 50px;
     }
 
-    .footer-container .info ul{
+    .footer-container .info ul {
         align-items: center;
         flex-direction: column;
     }
 
-    .footer-container .info ul li{
+    .footer-container .info ul li {
         margin: 5px 0;
     }
 
-    .footer-container .hr{
+    .footer-container .hr {
         width: 100%;
         height: 2px;
         background: rgba(255, 255, 255, 0.2);
@@ -192,171 +193,229 @@
 }
 
 @media screen and (max-width: 768px) {
+
     /* Common */
-    body{
+    body {
         margin: 5rem 0 0 0;
     }
 
-    .section-title-01{
+    .section-title-01 {
         font-size: 3rem;
     }
 
-    .section-title-02{
+    .section-title-02 {
         font-size: 2rem;
         transform: translateY(-65px);
     }
 
     /* Home Section */
-    .home .home-container .home-image img{
+    .home .home-container .home-image img {
         max-width: 350px;
     }
 
     /* Contact Section */
-    .contact-form .second-row{
+    .contact-form .second-row {
         flex-direction: column;
     }
 
-    .contact-form .second-row input{
+    .contact-form .second-row input {
         width: 100%;
     }
 
     /* Footer section */
-    .footer-copyright p{
+    .footer-copyright p {
         margin-top: 30px;
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 425px) {
-    section{
+    section {
         padding: 4rem 2rem 2rem;
     }
 
-    /* Home section */
-    .home .home-container .home-image img{
-        max-width: 250px;
-    }
-
-    .home .home-container #home-title{
+    .section-title-01 {
         font-size: 2.5rem;
     }
 
-    .home .home-container #home-sub-title{
+    .section-title-02 {
+        font-size: 1.8rem;
+    }
+
+    /* Home section */
+    .home .home-container .home-image img {
+        max-width: 250px;
+    }
+
+    .home .home-container #home-title {
+        font-size: 2.5rem;
+    }
+
+    .home .home-container #home-sub-title {
         font-size: 1.05rem;
     }
 
     /* About section */
-    .about-img img{
+    .about-img img {
         width: 250px;
     }
 
-    .about-info .description h3{
+    .about-info .description h3 {
         font-size: 1.8rem;
     }
 
-    .about-info .description h4{
+    .about-info .description h4 {
         text-align: justify;
         font-size: 1rem;
     }
 
-    .about-info .description p{
+    .about-info .description p {
         font-size: 0.9rem;
     }
 
-    .professional-list .list-item h3{
+    .professional-list .list-item h3 {
         font-size: 2rem;
     }
 
-    .about-info .professional-list .list-item span{
+    .about-info .professional-list .list-item span {
         font-size: 0.9rem;
     }
 
     /* Skills section */
     .edu-list .item .year,
     .edu-list .item p span,
-    .edu-list .item p{
+    .edu-list .item p {
         font-size: 1rem;
     }
 
-    .edu-list .item img{
+    .edu-list .item img {
         width: 4rem;
     }
 
+    .skills-description h3 {
+        font-size: 1.3rem;
+    }
+
     /* Service section */
-    .services-description h3{
+    .services-description h3 {
         font-size: 1.4rem;
     }
 
-    .service-card h3{
+    .service-card h3 {
         font-size: 1.25rem;
     }
 
-    .service-card .learn-more-btn{
+    .service-card .learn-more-btn {
         font-size: 1rem;
     }
 
     .service-modal-body h3,
-    .portfolio-model-body h3{
+    .portfolio-model-body h3 {
         font-size: 1.2rem;
     }
 
-    .service-modal-body h4{
+    .service-modal-body h4 {
         font-size: 0.9rem;
     }
-    
+
     .service-modal-body p,
-    .service-modal-body ul li{
+    .service-modal-body ul li {
         font-size: 0.875rem;
     }
 
     .portfolio-model-body p,
-    .portfolio-model-body li{
+    .portfolio-model-body li {
         font-size: 0.9rem;
     }
 
-    .portfolio-model-body span{
+    .portfolio-model-body span {
         font-size: 1rem;
     }
 
     /* Contact section */
-    .contact-left h2{
+    .contact-left h2 {
         font-size: 1.6rem;
     }
 
-    .contact-list li h3{
+    .contact-list li h3 {
         font-size: 1.4rem;
     }
 
     /* Footer section */
-    .footer-container .about, .footer-container .info{
+    .footer-container .about,
+    .footer-container .info {
         margin-bottom: 25px;
     }
 
-    .footer-container .about h2{
+    .footer-container .about h2 {
         font-size: 2rem;
     }
 
-    .footer-container .about p{
+    .footer-container .about p {
         font-size: 1rem;
     }
 
     .footer-container .info h3,
-    .footer-container .follow h3{
+    .footer-container .follow h3 {
         font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 380px) {
+
+    /* Home section */
+    .home .home-container #home-title {
+        font-size: 2.2rem;
+    }
+
+    .home .home-container #home-sub-title {
+        font-size: 0.95rem;
+    }
+
+    .home .home-container .info p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Skills section */
+    .skills-description p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* About section */
+    .about-info .description h3 {
+        font-size: 1.45rem;
+    }
+
+    .about-info .professional-list .list-item h3{
+        font-size: 2.2rem;
+    }
+
+    /* Contact section */
+    .contact-list li h3,
+    .contact-list li h3 i{
+        font-size: 1.4rem;
+    }
+
+    .contact-list li span{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
     /* Home section */
     .home .home-container #home-title{
         font-size: 2rem;
     }
 
-    .home .home-container #home-sub-title{
-        font-size: 0.95rem;
+    /* Footer section */
+    .footer-container .about h2{
+        font-size: 1.9rem;
     }
 
-    .home .home-container .info p{
-        text-align: justify;
+    .footer-container .about p{
+        font-size: 0.9rem;
     }
 }
