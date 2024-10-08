@@ -1,41 +1,49 @@
-/* JetBrains Mono */
+.home,
+.nav-bar,
+section {
+    max-width: 71.8rem
+}
+
+.btn,
+.nav-items a,
+.scrollToTop-btn {
+    font-size: var(--normal-font-size)
+}
+
+.edu-list .item,
+.edu-list .item img,
+.service-card,
+.service-modal-body,
+header.sticky {
+    box-shadow: var(--box-shadow)
+}
+
+.btn,
+.footer-container .about a,
+.footer-container .info a,
+.home .scroll-down,
+.nav-items a {
+    text-transform: uppercase
+}
+
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('/assets/fonts/JetBrainsMono-Regular.woff2') format('woff2'),
-        url('/assets/fonts/JetBrainsMono-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('/assets/fonts/JetBrainsMono-Regular.woff2') format('woff2'), url('/assets/fonts/JetBrainsMono-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: swap
 }
 
 body,
 button,
 input,
 textarea {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'JetBrains Mono', monospace
 }
-
 
 .nav-bar .logo,
 body {
     color: var(--first-color)
-}
-
-.btn,
-.nav-items a {
-    font-size: var(--normal-font-size);
-    text-transform: uppercase
-}
-
-.home,
-.nav-bar {
-    max-width: 71.8rem
-}
-
-.btn,
-.home .scroll-down,
-.nav-items a {
-    text-transform: uppercase
 }
 
 * {
@@ -48,28 +56,22 @@ body {
     --first-color: #C7C7C8;
     --second-color: #03a866;
     --third-color: #A0A0A5;
-
     --hover-color: #05e78d;
     --body-bg-color: #121212;
     --card-bg-color: #1C1C22;
     --modal-bg-color: #2A2A2E;
-
     --bg-transparent-color: rgba(255, 255, 255, 0.08);
     --bg-transparent-color-01: rgba(106, 89, 209, 0.25);
-
     --line-color: #404040;
     --color-filter: invert(1);
-
     --box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
-
     --scroll-bar-color: #404040;
     --scroll-thumb-color: #606680;
     --scroll-thumb-hover-color: #80849B;
-
     --normal-font-size: 1.05rem;
     --para-font-size: 1.2rem;
     --title-sm-font: 1.5rem;
-    --title-font-size: 4rem;
+    --title-font-size: 4rem
 }
 
 html {
@@ -91,11 +93,15 @@ body {
 section {
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    position: relative
 }
 
+.home-container .info,
+.portfolio .container .content,
+.services .container .content,
+.skills .container .content,
 img {
-    width: 100%;
+    width: 100%
 }
 
 ul {
@@ -108,7 +114,6 @@ a {
 
 section {
     overflow: hidden;
-    max-width: 71.8rem;
     padding: 6rem 2rem 2rem
 }
 
@@ -121,7 +126,7 @@ section {
     padding: 1.2rem;
     letter-spacing: 1px;
     border: none;
-    border-radius: 0.8rem;
+    border-radius: .8rem;
     cursor: pointer
 }
 
@@ -131,7 +136,6 @@ section {
     align-items: center
 }
 
-/* Scroll to top button */
 .scrollToTop-btn {
     z-index: 10000;
     position: fixed;
@@ -141,20 +145,24 @@ section {
     height: 45px;
     background: var(--second-color);
     color: #f9fafb;
-    font-size: var(--normal-font-size);
     border: 2px solid var(--body-bg-color);
     border-radius: 50%;
     cursor: pointer;
     opacity: 0;
-    transition: .5s ease;
+    transition: .5s
+}
+
+.about-img,
+.container,
+.nav-items a {
+    position: relative
 }
 
 .scrollToTop-btn.active {
     right: 20px;
     pointer-events: all;
-    opacity: 1;
+    opacity: 1
 }
-
 
 ::-webkit-scrollbar {
     width: .6rem;
@@ -176,6 +184,12 @@ header.sticky .nav-items a.active::after {
     background-color: var(--hover-color)
 }
 
+.section-title-02::before,
+.skills-info h4 label,
+footer {
+    background: var(--second-color)
+}
+
 header {
     z-index: 1000;
     width: 100%;
@@ -187,8 +201,7 @@ header {
 }
 
 header.sticky {
-    background: rgba(255, 255, 255, .1);
-    box-shadow: var(--box-shadow)
+    background: rgba(255, 255, 255, .1)
 }
 
 .nav-bar {
@@ -219,6 +232,7 @@ header.sticky .nav-bar {
 }
 
 .about-info .description h4 span,
+.home-container .info span,
 .nav-bar .logo span,
 .service-modal-body ul li i {
     color: var(--second-color)
@@ -227,7 +241,6 @@ header.sticky .nav-bar {
 .nav-items a {
     color: var(--first-color);
     font-weight: 400;
-    position: relative;
     padding-bottom: 5px
 }
 
@@ -251,7 +264,7 @@ header.sticky .nav-bar {
 }
 
 .nav-menu-btn {
-    display: none;
+    display: none
 }
 
 .home {
@@ -287,13 +300,6 @@ header.sticky .nav-bar {
     font-size: 1.8rem
 }
 
-.home-container .info,
-.portfolio .container .content,
-.services .container .content,
-.skills .container .content {
-    width: 100%
-}
-
 .home-container .info h2 {
     font-size: 4rem;
     font-weight: 800;
@@ -307,10 +313,6 @@ header.sticky .nav-bar {
     line-height: 3.125rem
 }
 
-.home-container .info span {
-    color: var(--second-color);
-}
-
 .home-container .info p {
     color: var(--third-color);
     font-size: var(--normal-font-size);
@@ -320,12 +322,12 @@ header.sticky .nav-bar {
 
 .home-container .home-image {
     position: relative;
-    align-items: right;
+    align-items: right
 }
 
 .home-container .home-image img {
     width: 450px;
-    transform: translate(0, 0);
+    transform: translate(0, 0)
 }
 
 .home .scroll-down {
@@ -379,19 +381,16 @@ header.sticky .nav-bar {
     height: .3rem;
     border-radius: .6rem;
     right: 0;
-    bottom: 0;
-    background: var(--second-color)
+    bottom: 0
 }
 
 .edu-list .item,
 .service-card {
     background: var(--card-bg-color);
-    border-bottom: 3px solid var(--second-color);
-    box-shadow: var(--box-shadow)
+    border-bottom: 3px solid var(--second-color)
 }
 
 .container {
-    position: relative;
     flex-direction: column
 }
 
@@ -401,10 +400,9 @@ header.sticky .nav-bar {
 }
 
 .about-img {
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .about-img img {
@@ -429,10 +427,16 @@ header.sticky .nav-bar {
     margin-bottom: .6rem
 }
 
+.about-info .description p,
+.edu-list .item .year,
+.edu-list .item p span,
+.skills-info h4 label {
+    font-size: var(--normal-font-size)
+}
+
 .about-info .description p {
     text-align: justify;
     color: var(--third-color);
-    font-size: var(--normal-font-size);
     margin-bottom: .9rem;
     padding-bottom: 1.5rem;
     border-bottom: 2px solid var(--line-color)
@@ -443,18 +447,12 @@ header.sticky .nav-bar {
     column-gap: 2rem
 }
 
-.edu-list .item .year,
-.edu-list .item p span,
-.skills-info h4 label {
-    font-size: var(--normal-font-size)
-}
-
 .about-info .professional-list .list-item {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .about-info .professional-list .list-item span,
@@ -463,22 +461,32 @@ header.sticky .nav-bar {
     font-size: var(--normal-font-size)
 }
 
+.service-card .learn-more-btn,
+.service-card .learn-more-btn i {
+    font-size: 1.1rem;
+    transition: .3s
+}
+
 .skills-description {
     max-width: 700px;
     margin-bottom: 3.1rem
 }
 
-.service-list {
+.service-list,
+.skills-info {
     max-width: 100%;
-    gap: 1.25rem;
-    display: grid;
+    gap: 1.25rem
+}
+
+.service-list {
+    display: grid
 }
 
 .skills-info {
-    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    justify-content: space-between;
+    margin: 0 auto
 }
 
 .skills-description h3 {
@@ -494,18 +502,12 @@ header.sticky .nav-bar {
     text-align: justify
 }
 
-.skills-info {
-    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
-    justify-content: space-between;
-    margin: 0 auto
-}
-
+.edu-list .item label,
 .skills-info h4 {
     margin-bottom: 1.25rem
 }
 
 .skills-info h4 label {
-    background: var(--second-color);
     color: #fff;
     font-weight: 400;
     padding: .5rem .9rem;
@@ -523,7 +525,7 @@ header.sticky .nav-bar {
     border-radius: .5rem;
     transition: .3s;
     line-height: 2rem;
-    flex-basis: 100%;
+    flex-basis: 100%
 }
 
 .edu-list .item .year {
@@ -535,24 +537,19 @@ header.sticky .nav-bar {
     font-weight: 500
 }
 
-.edu-list .item label {
-    margin-bottom: 1.25rem;
-}
-
 .edu-list .item img {
     max-width: 5rem;
     height: auto;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow)
+    border-radius: .5rem
 }
 
 .edu-list .item .icons {
-    margin-top: 0.8rem;
+    margin-top: .8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 1.5rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .services-description h3 {
@@ -570,7 +567,7 @@ header.sticky .nav-bar {
 .service-card {
     padding: 2rem;
     border: 2px solid var(--third-color);
-    border-radius: 0.5rem
+    border-radius: .5rem
 }
 
 .portfolio-model-body,
@@ -595,16 +592,9 @@ header.sticky .nav-bar {
 
 .service-card .learn-more-btn {
     font-style: italic;
-    font-size: 1.1rem;
     font-weight: 600;
     color: var(--second-color);
-    cursor: pointer;
-    transition: .3s
-}
-
-.service-card .learn-more-btn i {
-    font-size: 1.1rem;
-    transition: .3s
+    cursor: pointer
 }
 
 .service-card:hover .learn-more-btn i {
@@ -633,13 +623,12 @@ header.sticky .nav-bar {
     max-width: 650px;
     margin: 1.25rem;
     border-radius: .6rem;
-    box-shadow: var(--box-shadow);
     transition: .5s
 }
 
 .portfolio-list .img-card,
 .portfolio-model-body {
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     box-shadow: var(--box-shadow)
 }
 
@@ -660,7 +649,7 @@ header.sticky .nav-bar {
 .portfolio-model-body h3,
 .service-modal-body h3 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .service-modal-body h4 {
@@ -690,7 +679,7 @@ header.sticky .nav-bar {
 }
 
 .portfolio-list .img-card .overlay {
-    transition: 0.5s
+    transition: .5s
 }
 
 .portfolio-list .img-card:hover .overlay {
@@ -698,7 +687,7 @@ header.sticky .nav-bar {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 255, 0.5);
+    background: rgba(0, 0, 255, .5)
 }
 
 .portfolio-list .img-card .info {
@@ -768,195 +757,190 @@ header.sticky .nav-bar {
     line-height: 1.5rem
 }
 
+.contact-left h2,
+.contact-list li {
+    margin-bottom: 40px
+}
+
 .portfolio-model-body span {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--first-color)
 }
 
-/* Contact form */
 .contact .container .content {
     display: flex;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1rem
 }
 
 .contact-left,
 .contact-right {
-    flex: 1;
+    flex: 1
 }
 
 .contact-left h2 {
     font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 40px;
-}
-
-.contact-list li {
-    margin-bottom: 40px;
+    font-weight: 800
 }
 
 .contact-list li h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .contact-list li h3 i {
     color: var(--second-color);
     font-size: 1.5rem;
-    margin-right: 10px;
+    margin-right: 10px
+}
+
+.contact-list li span a,
+.contact-right p {
+    color: var(--third-color)
 }
 
 .contact-list li span {
     font-size: 1rem;
     color: var(--second-color);
-    margin-left: 40px;
-}
-
-.contact-list li span a {
-    color: var(--third-color);
+    margin-left: 40px
 }
 
 .contact-right p {
-    color: var(--third-color);
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 .contact-right p span {
     color: var(--first-color);
-    font-weight: 700;
+    font-weight: 700
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     border: none;
-    outline: none;
+    outline: 0;
     color: var(--first-color);
     background: var(--bg-transparent-color-01);
     font-size: var(--normal-font-size);
     margin-bottom: 20px;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 .contact-form .second-row {
     display: flex;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: .5rem
 }
 
 .contact-form .second-row input {
-    width: 50%;
+    width: 50%
 }
 
 .contact-right textarea {
-    resize: none;
+    resize: none
 }
 
 ::placeholder {
-    color: var(--first-color);
+    color: var(--first-color)
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border: 2px solid var(--first-color);
+    border: 2px solid var(--first-color)
 }
 
 .contact-form .btn {
     border: none;
     margin-top: 0;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer
 }
 
-/* Footer */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--second-color);
     width: 100%;
     margin-top: 50px;
     padding: 3rem 2rem;
-    color: #f9fafb;
+    color: #f9fafb
 }
 
 footer a {
-    color: #fff;
+    color: #fff
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 71.8rem;
+    max-width: 71.8rem
 }
 
 .footer-container .about h2 {
     font-size: 2.5rem;
     font-weight: 600;
-    background: linear-gradient(to top, transparent 0%, #fff 50%);
+    background: linear-gradient(to top, transparent 0, #fff 50%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0.8;
+    opacity: .8
 }
 
 .footer-container .about p {
     font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .footer-container .about a {
     font-size: var(--normal-font-size);
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 400
 }
 
-.footer-container .info,
-.footer-container .follow {
+.footer-container .follow,
+.footer-container .info {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column
 }
 
-.footer-container .info h3,
-.footer-container .follow h3 {
+.footer-container .follow h3,
+.footer-container .info h3 {
     font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
-.footer-container .info h3,
 .footer-container .follow ul,
+.footer-container .info h3,
 .footer-container .info ul {
-    display: flex;
+    display: flex
 }
 
 .footer-container .info a {
     font-size: var(--normal-font-size);
     font-weight: 500;
-    text-transform: uppercase;
-    margin: 20px;
+    margin: 20px
 }
 
 .footer-container .follow a {
     font-size: 1.8rem;
-    margin: 15px;
+    margin: 15px
 }
 
 .footer-copyright p {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 200;
-    margin-top: 50px;
+    margin-top: 50px
 }
