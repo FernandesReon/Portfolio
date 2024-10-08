@@ -82,17 +82,16 @@
                 <h3 id="home-sub-title">{Aspiring Software Engineer}</h3>
                 <p>I’m a passionate and enthusiastic individual, proficient in a variety of programming languages and
                     technologies.</p>
-                <a href="mailto:reon.fernandes@example.com" class="btn" aria-label="Contact Reon Fernandes">
-                    Contact Me
+                <button class="btn" onclick="document.getElementById('contact').scrollIntoView();">Contact Me
                     <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
-                </a>
+                </button>
             </div>
 
             <div class="home-image">
                 <picture>
                     <source srcset="assets/images/Cartoon_Reon.avif" type="image/avif">
                     <source srcset="assets/images/Cartoon_Reon.webp" type="image/webp">
-                    <img src="assets/images/Cartoon_Reon.webp" alt="Cartoon image of Reon Fernandes" loading="lazy"
+                    <img src="assets/images/Cartoon_Reon.webp" alt="Cartoon image of Reon Fernandes" loading="eager"
                         width="auto" height="auto">
                 </picture>
             </div>
@@ -206,7 +205,7 @@
                                     <br>GPA: <span>8.05</span>
                                 </p>
                             </li>
-                            
+
                         </ul>
                     </div>
 
@@ -399,11 +398,12 @@
                     <!-- Project 1 -->
                     <div class="img-card-container">
                         <div class="img-card">
-                            <div class="overlay"></div>
+                            <div class="overlay" style="background: rgba(255, 0, 0, 0.5);"></div>
 
                             <div class="info">
                                 <h3>Smart Contact Manager</h3>
-                                <span>More Info <i class="fa-solid fa-circle-arrow-right"></i></span>
+                                <span>More Info <i class="fa-solid fa-circle-arrow-right"></i>
+                                [In-Progress]</span>
                             </div>
 
                             <img src="assets/images/Smart_Connect.jpg" alt="Smart Contact Manager" loading="lazy">
@@ -428,11 +428,7 @@
                                         Built with Spring Boot, offering a scalable backend with RESTful APIs for
                                         efficient data handling.
                                     </li>
-                                    <li>
-                                        <span>Role-Based Access Control:</span>
-                                        Differentiates between Admin and User roles to provide customized access to
-                                        resources and features.
-                                    </li>
+                                    
                                     <li>
                                         <span>Database Integration:</span>
                                         Utilize a relational database for storing user and contact data, with JPA for
@@ -503,7 +499,7 @@
                             <div class="overlay"></div>
 
                             <div class="info">
-                                <h3>Quiz Application REST API</h3>
+                                <h3>Quiz App REST API</h3>
                                 <span>More Info <i class="fa-solid fa-circle-arrow-right"></i></span>
                             </div>
 
@@ -522,12 +518,6 @@
                                     include:
                                 </p>
                                 <ul>
-                                    <li>
-                                        <span>REST API Design:</span>
-                                        The application follows RESTful architecture, allowing front-end clients to
-                                        perform CRUD operations (Create, Read, Update, Delete) on quizzes and users.
-                                    </li>
-
                                     <li>
                                         <span>Database Integration:</span>
                                         Uses JPA and Hibernate for seamless object-relational mapping, with a relational
@@ -571,7 +561,7 @@
             <div class="content">
                 <!-- Left Section: Contact Info -->
                 <div class="contact-left">
-                    <h2>Let's discuss your projects</h2>
+                    <h2>Contact Details</h2>
                     <ul class="contact-list">
                         <li>
                             <h3 class="item-title">
@@ -597,27 +587,33 @@
                 <!-- Right Section: Contact Form -->
                 <div class="contact-right">
                     <p>I'm always open for discussion.</p>
-                    <form action="#" method="POST" class="contact-form" aria-label="Contact Form">
+                    <form action="#" method="POST" class="contact-form" id="form" aria-label="Contact Form">
+
+                        <input type="hidden" name="access_key" value="5b489353-d88a-4c77-a50f-7f3478cc2cb8">
 
                         <div class="first-row">
                             <input type="text" name="name" id="user-name" placeholder="Name" required
-                                aria-required="true" aria-label="Name">
+                                aria-required="true" aria-label="Name" autocomplete="off">
                         </div>
 
                         <div class="second-row">
                             <input type="email" name="email" id="user-email" placeholder="Email" required
-                                aria-required="true" aria-label="Email">
-                            <input type="text" name="subject" id="topic" placeholder="Subject" aria-label="Subject">
+                                aria-required="true" aria-label="Email" autocomplete="off">
+
+                            <input type="text" name="subject" id="topic" placeholder="Subject" aria-label="Subject"
+                                autocomplete="off">
                         </div>
 
                         <div class="third-row">
-                            <textarea name="message" id="feedback" rows="5" placeholder="Message"
-                                aria-label="Message"></textarea>
+                            <textarea name="message" id="feedback" rows="5" placeholder="Message" aria-label="Message"
+                                required autocomplete="off"></textarea>
                         </div>
 
-                        <button class="btn" type="submit">
+                        <button class="btn" type="submit" style="margin-bottom: 1rem;">
                             Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
                         </button>
+                        <br>
+                        <div id="result"></div>
                     </form>
                 </div>
             </div>
@@ -695,6 +691,7 @@
 
     <script type="module" src="assets/script/navbar.js" defer></script>
     <script type="module" src="assets/script/app.js" defer></script>
+    <script type="module" src="assets/script/contactForm.js" defer></script>
 </body>
 
 </html>

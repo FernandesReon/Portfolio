@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('/assets/fonts/JetBrainsMono-Regular.woff2') format('woff2'),
-         url('/assets/fonts/JetBrainsMono-Regular.woff') format('woff');
+        url('/assets/fonts/JetBrainsMono-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -48,15 +48,20 @@ body {
     --first-color: #C7C7C8;
     --second-color: #03a866;
     --third-color: #A0A0A5;
+
     --hover-color: #05e78d;
     --body-bg-color: #121212;
     --card-bg-color: #1C1C22;
     --modal-bg-color: #2A2A2E;
+
     --bg-transparent-color: rgba(255, 255, 255, 0.08);
     --bg-transparent-color-01: rgba(106, 89, 209, 0.25);
+
     --line-color: #404040;
     --color-filter: invert(1);
+
     --box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+
     --scroll-bar-color: #404040;
     --scroll-thumb-color: #606680;
     --scroll-thumb-hover-color: #80849B;
@@ -463,13 +468,13 @@ header.sticky .nav-bar {
     margin-bottom: 3.1rem
 }
 
-.service-list{
+.service-list {
     max-width: 100%;
     gap: 1.25rem;
     display: grid;
 }
 
-.skills-info{
+.skills-info {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -478,7 +483,7 @@ header.sticky .nav-bar {
 
 .skills-description h3 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: .3rem
 }
 
@@ -510,9 +515,10 @@ header.sticky .nav-bar {
 }
 
 .edu-list .item {
+    border-top: 2px solid var(--third-color);
     padding: 1.25rem;
     margin-top: .9rem;
-    border-radius: .8rem;
+    border-radius: .5rem;
     transition: .3s;
     line-height: 2rem;
     flex-basis: 100%;
@@ -527,7 +533,7 @@ header.sticky .nav-bar {
     font-weight: 500
 }
 
-.edu-list .item label{
+.edu-list .item label {
     margin-bottom: 1.25rem;
 }
 
@@ -561,12 +567,14 @@ header.sticky .nav-bar {
 
 .service-card {
     padding: 2rem;
-    border-radius: 1rem
+    border: 2px solid var(--third-color);
+    border-radius: 0.5rem
 }
 
 .portfolio-model-body,
 .service-modal-body {
-    padding: 2.5rem;
+    border: 2px solid var(--third-color);
+    padding: 2rem;
     transform: translateY(-50px)
 }
 
@@ -584,12 +592,16 @@ header.sticky .nav-bar {
 }
 
 .service-card .learn-more-btn {
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 600;
     color: var(--second-color);
     cursor: pointer;
     transition: .3s
 }
 
 .service-card .learn-more-btn i {
+    font-size: 1.1rem;
     transition: .3s
 }
 
@@ -625,7 +637,7 @@ header.sticky .nav-bar {
 
 .portfolio-list .img-card,
 .portfolio-model-body {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: var(--box-shadow)
 }
 
@@ -676,7 +688,7 @@ header.sticky .nav-bar {
 }
 
 .portfolio-list .img-card .overlay {
-    transition: 1s
+    transition: 0.5s
 }
 
 .portfolio-list .img-card:hover .overlay {
@@ -684,7 +696,7 @@ header.sticky .nav-bar {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .6)
+    background: rgba(0, 0, 255, 0.5);
 }
 
 .portfolio-list .img-card .info {
@@ -705,12 +717,12 @@ header.sticky .nav-bar {
 }
 
 .portfolio-list .img-card .info h3 {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     font-weight: 800
 }
 
 .portfolio-list .img-card .info span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500
 }
 
@@ -785,18 +797,19 @@ header.sticky .nav-bar {
 }
 
 .contact-list li h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .contact-list li h3 i {
     color: var(--second-color);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-right: 10px;
 }
 
 .contact-list li span {
+    font-size: 1rem;
     color: var(--second-color);
     margin-left: 40px;
 }
@@ -807,7 +820,8 @@ header.sticky .nav-bar {
 
 .contact-right p {
     color: var(--third-color);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
@@ -848,7 +862,7 @@ header.sticky .nav-bar {
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus{
+.contact-form textarea:focus {
     border: 2px solid var(--first-color);
 }
 
@@ -868,7 +882,7 @@ footer {
     background: var(--second-color);
     width: 100%;
     margin-top: 50px;
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
     color: #f9fafb;
 }
 
@@ -884,7 +898,7 @@ footer a {
 }
 
 .footer-container .about h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     background: linear-gradient(to top, transparent 0%, #fff 50%);
     -webkit-background-clip: text;
@@ -894,7 +908,7 @@ footer a {
 }
 
 .footer-container .about p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -914,7 +928,7 @@ footer a {
 
 .footer-container .info h3,
 .footer-container .follow h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -939,7 +953,8 @@ footer a {
 }
 
 .footer-copyright p {
+    text-align: center;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 200;
     margin-top: 50px;
 }

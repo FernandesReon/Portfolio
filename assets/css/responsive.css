@@ -219,13 +219,22 @@
     .contact-form .second-row input{
         width: 100%;
     }
+
+    /* Footer section */
+    .footer-copyright p{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    section{
+        padding: 4rem 2rem 2rem;
+    }
 
     /* Home section */
     .home .home-container .home-image img{
-        max-width: 300px;
+        max-width: 250px;
     }
 
     .home .home-container #home-title{
@@ -238,7 +247,7 @@
 
     /* About section */
     .about-img img{
-        width: 300px;
+        width: 250px;
     }
 
     .about-info .description h3{
@@ -262,9 +271,33 @@
         font-size: 0.9rem;
     }
 
+    /* Skills section */
+    .edu-list .item .year,
+    .edu-list .item p span,
+    .edu-list .item p{
+        font-size: 1rem;
+    }
+
+    .edu-list .item img{
+        width: 4rem;
+    }
+
     /* Service section */
-    .service-modal-body h3{
-        font-size: 1.3rem;
+    .services-description h3{
+        font-size: 1.4rem;
+    }
+
+    .service-card h3{
+        font-size: 1.25rem;
+    }
+
+    .service-card .learn-more-btn{
+        font-size: 1rem;
+    }
+
+    .service-modal-body h3,
+    .portfolio-model-body h3{
+        font-size: 1.2rem;
     }
 
     .service-modal-body h4{
@@ -274,5 +307,56 @@
     .service-modal-body p,
     .service-modal-body ul li{
         font-size: 0.875rem;
+    }
+
+    .portfolio-model-body p,
+    .portfolio-model-body li{
+        font-size: 0.9rem;
+    }
+
+    .portfolio-model-body span{
+        font-size: 1rem;
+    }
+
+    /* Contact section */
+    .contact-left h2{
+        font-size: 1.6rem;
+    }
+
+    .contact-list li h3{
+        font-size: 1.4rem;
+    }
+
+    /* Footer section */
+    .footer-container .about, .footer-container .info{
+        margin-bottom: 25px;
+    }
+
+    .footer-container .about h2{
+        font-size: 2rem;
+    }
+
+    .footer-container .about p{
+        font-size: 1rem;
+    }
+
+    .footer-container .info h3,
+    .footer-container .follow h3{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    /* Home section */
+    .home .home-container #home-title{
+        font-size: 2rem;
+    }
+
+    .home .home-container #home-sub-title{
+        font-size: 0.95rem;
+    }
+
+    .home .home-container .info p{
+        text-align: justify;
     }
 }
