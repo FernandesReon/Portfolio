@@ -51,7 +51,6 @@
 
     .nav-close-btn,
     .nav-menu-btn {
-        filter: var(--color-filter);
         width: 40px;
         height: 40px;
         cursor: pointer

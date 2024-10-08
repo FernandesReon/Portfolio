@@ -63,7 +63,6 @@ body {
     --bg-transparent-color: rgba(255, 255, 255, 0.08);
     --bg-transparent-color-01: rgba(106, 89, 209, 0.25);
     --line-color: #404040;
-    --color-filter: invert(1);
     --box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     --scroll-bar-color: #404040;
     --scroll-thumb-color: #606680;
