@@ -265,8 +265,7 @@
     .edu-list .item p,
     .edu-list .item p span,
     .footer-container .about p,
-    .portfolio-model-body span,
-    .service-card .learn-more-btn {
+    .portfolio-model-body span {
         font-size: 1rem
     }
 
@@ -280,23 +279,12 @@
         font-size: 1.3rem
     }
 
-    .contact-list li h3,
-    .services-description h3 {
+    .contact-list li h3{
         font-size: 1.4rem
     }
-
-    .service-card h3 {
-        font-size: 1.25rem
-    }
-
-    .portfolio-model-body h3,
-    .service-modal-body h3 {
+    
+    .portfolio-model-body h3{
         font-size: 1.2rem
-    }
-
-    .service-modal-body p,
-    .service-modal-body ul li {
-        font-size: .875rem
     }
 
     .contact-left h2 {
